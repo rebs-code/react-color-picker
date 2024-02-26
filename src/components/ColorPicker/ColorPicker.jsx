@@ -7,6 +7,11 @@ function ColorPicker() {
   //create state for color
   const [color, setColor] = useState("#FFFFFF");
 
+  //create function to handle color change
+  const handleColorChange = (e) => {
+    setColor(e.target.value);
+  };
+
   return (
     <>
       <div className={styles.colorPickerContainer}>
@@ -14,12 +19,8 @@ function ColorPicker() {
         <p>
           Selected Color: <strong>{color}</strong>
         </p>
-        <label>Select a color</label>
-        <input
-          type="color"
-          value={color}
-          onChange={(e) => setColor(e.target.value)}
-        />
+        <label>Select a Color </label>
+        <input type="color" value={color} onChange={handleColorChange} />
       </div>
     </>
   );
