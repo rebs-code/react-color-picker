@@ -36,6 +36,9 @@ The color selection is reflected in real-time on a display area, which changes i
     </div>
 ```
 
+![image](https://github.com/rebs-code/react-color-picker/assets/80966551/40eb6596-64f0-453b-85df-0053c2df238c)
+
+
 To ensure the visibility of the text against the selected color, the component calculates a **contrast color** using the getContrastColor function. This function takes the hex value of the selected color, calculates its brightness, and returns either "black" or "white" depending on the brightness of the color. The text color in the display area is then set to this contrast color.
 
 ```
