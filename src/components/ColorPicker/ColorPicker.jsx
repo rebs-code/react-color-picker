@@ -9,7 +9,18 @@ function ColorPicker() {
 
   return (
     <>
-      <div className={styles.colorPickerContainer}>hello</div>
+      <div className={styles.colorPickerContainer}>
+        <div className="colorDisplay" style={{ backgroundColor: color }}></div>
+        <p>
+          Selected Color: <strong>{color}</strong>
+        </p>
+        <label>Select a color</label>
+        <input
+          type="color"
+          value={color}
+          onChange={(e) => setColor(e.target.value)}
+        />
+      </div>
     </>
   );
 }
