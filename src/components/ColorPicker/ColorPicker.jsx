@@ -27,13 +27,18 @@ function ColorPicker() {
   return (
     <>
       <div className={styles.colorPickerContainer}>
-        <div className={styles.colorDisplay} style={{ backgroundColor: color }}>
-          <p style={{ color: textColor }}>
-            Selected Color: <strong>{color}</strong>
-          </p>
+        <div className={styles.colorPickerCard}>
+          <div
+            className={styles.colorDisplay}
+            style={{ backgroundColor: color }}
+          >
+            <p style={{ color: textColor }}>
+              Selected Color: <strong>{color}</strong>
+            </p>
+          </div>
+          <label>Select a Color: </label>
+          <input type="color" value={color} onChange={handleColorChange} />
         </div>
-        <label>Select a Color: </label>
-        <input type="color" value={color} onChange={handleColorChange} />
       </div>
     </>
   );
