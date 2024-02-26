@@ -1,6 +1,6 @@
 import "./App.css";
 //import color picker component
-import ColorPicker from "./components/ColorPicker";
+import ColorPicker from "./components/ColorPicker/ColorPicker";
 
 function App() {
   return (
