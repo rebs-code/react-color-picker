@@ -1,11 +1,13 @@
 import "./App.css";
+//import header component
+import Header from "./components/Header/Header";
 //import color picker component
 import ColorPicker from "./components/ColorPicker/ColorPicker";
 
 function App() {
   return (
     <>
-      <h1>React Color Picker</h1>
+      <Header />
       <ColorPicker />
     </>
   );

@@ -9,7 +9,7 @@ function ColorPicker() {
 
   return (
     <>
-      <div className={styles.colorPicker}>hello</div>
+      <div className={styles.colorPickerContainer}>hello</div>
     </>
   );
 }
