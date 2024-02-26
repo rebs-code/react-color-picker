@@ -2,6 +2,9 @@
 
 This project is a simple color picker built with React. It features a header, a footer, and a main content area that includes the color picker. The main content area expands to take up all available space between the header and footer.
 
+![image](https://github.com/rebs-code/react-color-picker/assets/80966551/d5bd154e-315d-47d9-88d3-a09c2f21d14b)
+
+
 ## Project Structure
 
 - `Header`: This component represents the header of the application.
